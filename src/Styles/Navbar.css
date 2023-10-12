@@ -1,0 +1,71 @@
+/*=============== HEADER & NAV ===============*/
+.header {
+  width: 100%;
+  background: transparent;
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+  z-index: var(--z-fixed);
+  /*For animation dark mode*/
+  transition: 0.4s;
+}
+
+.header__shrink {
+  box-shadow: 5px 5px 15px -5px var(--black-2);
+  background: var(--white);
+}
+
+.nav {
+  height: var(--header-height);
+  width: 100%;
+}
+
+.menu a {
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--black-1);
+  font-family: "Montserrat", sans-serif;
+  transition: 0.3s;
+}
+
+.dropDown {
+  background-color: var(--color-1);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  flex-direction: column;
+  margin-top: 2rem;
+  visibility: hidden;
+}
+.dropDown a {
+  color: var(--white);
+}
+
+.menu a:hover {
+  color: var(--color-1);
+}
+.dropDown a:hover {
+  color: var(--color-3);
+}
+.sub:hover .dropDown {
+  visibility: visible;
+}
+.undefinedactive__menu {
+  color: var(--color-1) !important;
+  font-weight: 700;
+}
+@media only screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+  }
+
+  /* .logo img {
+    margin-top: -70px !important;
+  } */
+  .logo h5 {
+    margin-top: -55px;
+  }
+}
