@@ -166,7 +166,7 @@ export default function Home() {
               with ease from those you know and trust!
             </p>
 
-            <div className="mt-3 flex-wrap d-flex justify-content-between">
+            <div className="mt-3 flex-wrap d-flex gap-2">
               <button className="cta">Get Started</button>
               <button className="cta2  ctaG">Learn more</button>
             </div>
@@ -366,7 +366,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-3 flex-wrap d-flex justify-content-between" data-aos="fade-up">
+          <div className="mt-3 flex-wrap d-flex gap-2" data-aos="fade-up">
             <button className="cta">Get Started</button>
             <button className="cta2  ctaG">Learn more</button>
           </div>

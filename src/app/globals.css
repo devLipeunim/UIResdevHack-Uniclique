@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
-@font-face {
+/* @font-face {
   font-family: "customFont";
   src: url("../Data/FONTS/Sophia.ttf") format("ttf"),
     url("../Data/FONTS/Sophia\ Bold.ttf") format("ttf"),
     url("../Data/FONTS/Sophia\ Italic.ttf") format("ttf"),
     url("../Data/FONTS/Sophia\ Heavy.ttf") format("ttf");
-}
+} */
 :root {
   --header-height: 5.5rem;
 
   /* fonts */
   --medium-16: "Montserrat", sans-serif;
-  --font: "customFont";
+  --font: 'Times New Roman', Times, serif;
 
   /* font sizes */
   --biggest-font-size: 40px;
@@ -84,6 +84,7 @@ body {
   /*color: var(--black-1);
   */ /*Foranimationdarkmode*/
   overflow-x: hidden !important;
+  /* font-family: 'Times New Roman', Times, serif; */
 }
 
 ::-webkit-scrollbar {
