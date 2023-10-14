@@ -281,3 +281,9 @@ section {
     max-width: 540px;
   }
 }
+
+@media (max-width: 425px){
+  h4 {
+    font-size: 28px !important;
+  }
+}

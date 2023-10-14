@@ -23,7 +23,9 @@
   font-weight: 700;
 
 }
-
+.Typewriter{
+  display: inline-block !important;
+}
 .subTitle {
   color: var(--Black-1);
   font-family: var(--medium-16);
@@ -316,6 +318,12 @@
   .cta4 {
     padding: 10px 30px;
     font-size: 14px;
+  }
+  .points{
+    font-size: 23px !important;
+  }
+  .faqSubPoints{
+    font-size: 15px !important;
   }
 
   .footerItem{

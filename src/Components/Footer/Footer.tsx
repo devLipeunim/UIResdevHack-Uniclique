@@ -8,7 +8,7 @@ import "../../Styles/home.css";
 const Footer = () => {
   return (
     <footer className="d-flex justify-content-center">
-      <section className="containeR d-flex justify-content-between flex-wrap mb-5">
+      <section className="containeR d-flex justify-content-between flex-wrap mb-5 gap-3">
         <div className="footerItem">
           <Image src={Logo} alt="logo" style={{ width: 65 }} />
 
