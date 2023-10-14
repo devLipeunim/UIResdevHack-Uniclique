@@ -4,6 +4,7 @@ import { Products, dataCollection } from "@component/Data/data";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
 import bullet from "../Images/bullet.svg";
@@ -15,6 +16,7 @@ export default function Home() {
     AOS.init();
   }, []);
 
+  const router = useRouter()
   const [category, setCategory] = useState("Shoe");
   const [service, setService] = useState("Photography");
   const [allProducts, setAllProducts] = useState(Products);
@@ -127,6 +129,10 @@ export default function Home() {
       return;
     }
     setActiveAccordion(index);
+  }
+
+  const formPage = ()=> {
+    router.push("./formbricks")
   }
 
   return (

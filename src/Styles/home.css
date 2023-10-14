@@ -263,18 +263,25 @@
   }
 }
 @media (max-width: 992px) {
+  .left {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .heroImage {
+    width: 100%;
+  }
   .lBox,
   .rBox {
     width: 470px;
   }
   .aboutImage {
-    width: 430px;
+    width: 100%;
   }
 }
 
 @media (max-width: 850px) {
   .heroImage {
-    width: 380px;
+    width: 100%;
   }
 }
 
@@ -289,7 +296,7 @@
     font-size: 30px !important;
   }
   .heroImage {
-    width: 350px;
+    width: 100%;
   }
   #product,
   #services {
@@ -303,7 +310,7 @@
     font-size: 16px;
   }
   .aboutImage {
-    width: 350px;
+    width: 100%;
   }
 }
 
@@ -340,6 +347,6 @@
     font-size: 12px;
   }
  .aboutImage{
-  width: 280px;
+  width: 100%;
  }
 }

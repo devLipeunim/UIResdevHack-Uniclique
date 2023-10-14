@@ -1,11 +1,10 @@
-import Footer from '@component/Components/Footer/Footer';
-import Header from '@component/Components/Header/Navbar';
-
-import type { Metadata } from 'next';
-import './globals.css';
+import Footer from "@component/Components/Footer/Footer";
+import Header from "@component/Components/Header/Navbar";
+import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-    // title: "Gourmet Chef Cuisine",
+  // title: "Gourmet Chef Cuisine",
   // description: "we serve up delicious gourmet foods for all occasions",
   referrer: "origin-when-cross-origin",
   themeColor: "#590209",
@@ -38,7 +37,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Uniclique",
-    description: "Discover a tailor-made website for your business – shop and sell with ease from those you know and trust!",
+    description:
+      "Discover a tailor-made website for your business – shop and sell with ease from those you know and trust!",
     url: "https://uniclique-ui.vercel.app/",
     siteName: "Uniclique",
     images: [
@@ -61,19 +61,20 @@ export const metadata: Metadata = {
     ],
     emails: "uniclique@gmail.com",
     countryName: "Nigeria",
-    phoneNumbers: "07080580497, 07048050217, 07040359018, 08104537964, 08183679548",
+    phoneNumbers:
+      "07080580497, 07048050217, 07040359018, 08104537964, 08183679548",
     type: "website",
   },
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-       <head>
+      <head>
         <link
           rel="apple-touch-icon"
           sizes="192x192"
@@ -108,16 +109,17 @@ export default function RootLayout({
           type="image/png"
           href="/images/Uniclique.svg"
         />
-         <link
+        <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
         />
+ 
       </head>
       <body>
-        <Header/>
+        <Header />
         {children}
-        <Footer/>
-        </body>
+        <Footer />
+      </body>
     </html>
-  )
+  );
 }
