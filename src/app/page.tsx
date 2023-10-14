@@ -161,7 +161,7 @@ export default function Home() {
                 />
               </h1>
 
-            <p className="mt-3 subTitle">
+            <p className="mt-5 subTitle">
               {" "}
               Discover a tailor-made website for your business – shop and sell
               with ease from those you know and trust!
