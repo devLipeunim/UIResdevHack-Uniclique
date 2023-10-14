@@ -130,11 +130,11 @@ export default function Home() {
   }
 
   return (
-    <main className="">
+    <main className="d-flex  justify-content-center flex-column width-100">
       <section className="d-flex  justify-content-center mt-2">
-        <div className="containeR d-flex align-items-center justify-content-between hero">
+        <div className="containeR d-flex flex-wrap align-items-center justify-content-between hero">
           <div
-            className="d-flex flex-column"
+            className="d-flex flex-column width-50 left"
             data-aos="fade-right"
             data-aos-duration="2000"
           >
@@ -166,13 +166,14 @@ export default function Home() {
               with ease from those you know and trust!
             </p>
 
-            <div className="mt-3">
+            <div className="mt-3 flex-wrap d-flex justify-content-between">
               <button className="cta">Get Started</button>
               <button className="cta2  ctaG">Learn more</button>
             </div>
           </div>
-          <div data-aos="fade-left" data-aos-duration="2000">
-            <Image src={heroImage} alt="" style={{ width: "500px" }} />
+
+          <div>
+            <Image src={heroImage} alt="" className="heroImage"   />
           </div>
         </div>
       </section>
@@ -241,13 +242,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="d-flex justify-content-center">
+      <section className="d-flex justify-content-center" id="services">
         <div className="containeR">
           <h1 data-aos="fade-up">Services we offer on Uniclique</h1>
           <ul
             data-aos="zoom-in"
             data-aos-duration="2000"
-            className="d-flex align-items-center justify-content-center mt-2 categories categories2"
+            className="d-flex align-items-center justify-content-center mt-2 categories"
           >
             <li
               className={`${service === "Photography" ? "BtnActive" : ""} `}
@@ -310,8 +311,8 @@ export default function Home() {
       </section>
 
       <section className="d-flex  justify-content-center">
-      <div className="containeR d-flex justify-content-between">
-        <div className="d-flex flex-column">
+      <div className="containeR d-flex justify-content-between flex-wrap">
+        <div className="d-flex flex-column width-50 left">
           <h1 data-aos="fade-up">What we offer to boost your business </h1>
           <div data-aos="fade-up">
             <div className="d-flex align-items-center gap-3 mt-3">
@@ -365,15 +366,14 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-3" data-aos="fade-up">
+          <div className="mt-3 flex-wrap d-flex justify-content-between" data-aos="fade-up">
             <button className="cta">Get Started</button>
             <button className="cta2  ctaG">Learn more</button>
           </div>
         </div>
         <div
-          className="aboutImage"
-          data-aos="fade-left"
-          data-aos-duration="2000"
+          className="aboutImage width-50"
+          
         ></div>
       </div>
       </section>

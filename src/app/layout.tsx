@@ -43,17 +43,17 @@ export const metadata: Metadata = {
     siteName: "Uniclique",
     images: [
       {
-        url: "https://uniclique-ui.vercel.app/images/heroImage.png",
+        url: "https://uniclique-hack.vercel.app/images/unicliqueImage.jpg",
         width: 800,
         height: 600,
       },
       {
-        url: "https://uniclique-ui.vercel.app/images/heroImage.png",
+        url: "https://uniclique-hack.vercel.app/images/unicliqueImage.jpg",
         width: 300,
         height: 300,
       },
       {
-        url: "https://uniclique-ui.vercel.app/images/heroImage.png",
+        url: "https://uniclique-hack.vercel.app/images/unicliqueImage.jpg",
         width: 1800,
         height: 1600,
         alt: "Uniclique Image",

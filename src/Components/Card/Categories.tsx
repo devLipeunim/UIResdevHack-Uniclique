@@ -11,7 +11,7 @@ type CategoriesProps = {
 const Categories = ({ item }: CategoriesProps) => {
   const { image01, title, subTitle } = item;
   return (
-    <div data-aos="zoom-in-up" data-aos-duration="2000" className="d-flex align-items-center justify-content-center mt-2 ">
+    <div data-aos="zoom-in-up" data-aos-duration="2000" className="d-flex align-items-center justify-content-center mt-2 flex-wrap ">
       <div className="rBox d-flex align-items-center justify-content-center position-relative">
         <Image src={image01} alt="" style={{width: 400}} className="position-absolute dataSet"/>
       </div>
@@ -19,9 +19,9 @@ const Categories = ({ item }: CategoriesProps) => {
         <div className="box">
           <h4 className="title">{title}</h4>
           <p className="mt-3 subTitle">{subTitle}</p>
-          <div className="mt-3">
+          <div className="mt-3 mt-3 flex-wrap d-flex gap-2">
             <button className="cta3">Find vendors</button>
-            <button className="cta4  ctaG">Become a seller</button>
+            <button className="cta4">Become a seller</button>
           </div>
         </div>
       </div>

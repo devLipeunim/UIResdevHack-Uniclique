@@ -8,8 +8,8 @@ import "../../Styles/home.css";
 const Footer = () => {
   return (
     <footer className="d-flex justify-content-center">
-      <section className="containeR d-flex justify-content-between mb-5">
-        <div>
+      <section className="containeR d-flex justify-content-between flex-wrap mb-5">
+        <div className="footerItem">
           <Image src={Logo} alt="logo" style={{ width: 65 }} />
 
           <div className="d-flex align-items-center gap-1 mt-1">
@@ -23,7 +23,7 @@ const Footer = () => {
             Reserved
           </p>
         </div>
-        <div>
+        <div className="footerItem">
           <h5 className="footerLink">Products</h5>
           <div className="footerSubLink">
             <li>Shoes</li>
@@ -36,7 +36,7 @@ const Footer = () => {
             <li>Books</li>
           </div>
         </div>
-        <div>
+        <div className="footerItem">
           <h5 className="footerLink">Services</h5>
           <div className="footerSubLink">
             <li>Photography</li>
@@ -48,7 +48,7 @@ const Footer = () => {
             <li>Laundry Service</li>
           </div>
         </div>
-        <div>
+        <div className="footerItem">
           <h5 className="footerLink">Contacts</h5>
           <div className="footerSubLink">
             <li>+234 7043 56787</li>

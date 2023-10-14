@@ -30,6 +30,7 @@
   transition: 0.3s;
 }
 
+
 .dropDown {
   background-color: var(--color-1);
   padding: 0.5rem 1rem;
@@ -37,6 +38,7 @@
   flex-direction: column;
   margin-top: 2rem;
   visibility: hidden;
+  z-index: 100000;
 }
 .dropDown a {
   color: var(--white);
@@ -55,17 +57,52 @@
   color: var(--color-1) !important;
   font-weight: 700;
 }
-@media only screen and (max-width: 768px) {
-  .header {
-    width: 100%;
-    height: 80px;
-    line-height: 80px;
-  }
 
-  /* .logo img {
-    margin-top: -70px !important;
-  } */
-  .logo h5 {
-    margin-top: -55px;
+.nav__toggle, .nav__close{
+  color: #000;
+  font-size: 1.55rem;
+  cursor: pointer;
+  display: none;
+}
+.nav__close {
+  font-size: 2rem;
+   cursor: pointer;
+}
+
+.navList2{
+visibility: hidden;
+position: absolute;
+}
+/* Show menu */
+.show-menu {
+  right: 0;
+}
+@media (max-width: 768px) {
+  .navList{
+    position: absolute;
+    visibility: hidden;
+    /* flex-direction: column;
+    background-color: var(--white);
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    padding: 6rem 2rem 3.5rem;
+    transition: 0.3s; */
+  }
+  .navList2{
+    position: absolute;
+    visibility: visible;
+    flex-direction: column;
+    background-color: var(--white);
+    top: 5rem;
+    width: 100%;
+    /* height: 100vh; */
+    /* height: 100%; */
+    padding: 2rem 0 2rem 0;
+    transition: 0.3s;
+  }
+  .nav__toggle, .nav__close{
+    display: block;
   }
 }
