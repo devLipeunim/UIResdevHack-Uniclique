@@ -138,9 +138,11 @@ export default function Home() {
             data-aos="fade-right"
             data-aos-duration="2000"
           >
-            <h1 className="heroTitle">
+            <h1 className="heroTitle position-relative ">
               University Retail made Easy right at your Fingertips.{" "}
-              <span className="creating">
+             
+            </h1>
+            <h1 className=" creating  position-absolute mt-5">
                 <Typewriter
                   options={{
                     strings: [
@@ -157,8 +159,7 @@ export default function Home() {
                     loop: true,
                   }}
                 />
-              </span>
-            </h1>
+              </h1>
 
             <p className="mt-3 subTitle">
               {" "}
